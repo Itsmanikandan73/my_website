@@ -1,1 +1,1 @@
-This is my new website i created for track my progress and share my knowledge.
+This is my website i created to track my progress. as well as showcase my work on internet.
