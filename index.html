@@ -7,52 +7,100 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <meta http-equiv="refresh" content="600">
 
-    <title>Itsmanikandan73</title>
-    <link rel="stylesheet" href="style.css">
+    <title>solo_shell</title>
+    <style>
+        body{
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background-color: black;
+        color:green;
+        }
+        header { border-bottom: 2px solid #333; margin-bottom: 20px; }
+        a { color: #0066cc; text-decoration: none; } 
+        a:hover { text-decoration: underline; background: #333; color: #fff; }
+        h1,h2,h3,h4 { text-transform: uppercase; }
+        section { margin-bottom: 40px; }
+
+        /* Terminal Container */
+        .terminal-window {
+        background-color: #1e1e1e;
+        border-radius: 6px;
+        box-shadow: 0 10px 30px rgb(0,0,0,0.3); overflow: hidden; color: #00ff00; /*Classic Hacker Green */
+        font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Header Bar */
+        .terminal-header {
+        background-color: #333; 
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        }
+        .dot { height: 12px; width: 12px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: yellow; }
+        .green {background-color: #27c93f;}
+
+        /* Terminal content */
+        .terminal-body { padding: 20px; font-size: 14px; }
+        .terminal-body a { color: #00ff00; text-decoration: underline; }
+        .promt { color: #00acee; } /* Light blue for the prompt */
+
+        /* Blinking Cursor Animation */ 
+        .cursor {
+        animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+        0% { opacity: 0;}
+        50% { opacity: 1; }
+        100% { opacity: 0;}
+        }
+    </style>
 </head>
 <body>
 
+<main>
     <header>
-        <h1>[Itsmanikandan73]</h1>
-        <p>Self-Taught Security & systems | Sprint 2025</p>
-
-        <nav>
-            <a href="portfolio.html">Home</a>
-            <a href="others.html">Others</a>
-        </nav>
-
+        <h1>Hi, I'm solo_shell 👋</h1>
+        <p>Self-Taught Security & Systems | winter 2026</p>
     </header>
     <section>
-        <h2>[0] Operational Background</h2>
+        <h2>About Me</h2>
         <div>
-            <p>In 2025, I began a self-directed journey into cybersecurity. I dedicated six month to mastering the fundamentals--from hardware interaction to network layers--using open-source resources. Bypassing traditional schooling, I build my Knowledge through books, technical writeups, and CTFs. I am continuously refining a professional-grade skill set by writing code that implements these core concepts.</p>
+            <p>In 2025, I began a self-directed journey into cybersecurity. By 2026, I pivoted deep into low-level systems to understand the machine's heartbeat. Bypassing traditional schooling, I build my Knowledge by reading documentation, analyzing binaries with GDB, and rewriting standard Linux utilities from scratch. I am Currently focused on mastering C and memory management to build professional-grade security tools.</p>
         </div>
     </section>
 
     <section id="skills">
         <h2>Technical Stack</h2>
         <ul>
-            <li><strong>Low-Level:</strong> C (Intermediate), NASM Assembly(little bit)</li>
+            <li><strong>Low-Level:</strong> C (Focus), x86 Assembly(NASM), GDB</li>
             <li><strong>Scripting:</strong> Python, Bash, Batch</li>
-            <li><strong>Knowledge:</strong> Network+, Security+, A+, Linux+, SQL</li>
+            <li><strong>Concepts:</strong> Linux Internals, Binary Exploitation, Socket Programming, Memory Management</li>
         </ul>
     </section>
     
     <section id="Projects">
     <h2>Recent Work</h2>
-    <p>Build an conversion tools for CTF's using C</p>
+        <ul>
+            <li><strong>Rewriting Linux Coreutils (ls, cat) in C to master systems calls.</li>
+            <li>Developed "Cursed Clock" (Custom Bind shell & Deamon).</li>
+            <li>Prototyping educational malwares (Ransomware/Keyloggers) for analysis.</strong></li>
+        </ul>
     </section>
 
     <section>
         <h3>Interests</h3>
         <ul>
-            <li>Linux [CLI]</li>
-            <li>Reverse enginnering</li>
-            <li>Binary exploitation</li>
-            <li>Foreignsic</li>
+            <li>Linux [Kernel & CLI]</li>
+            <li>Reverse Engineering</li>
+            <li>Binary Exploitation (Stack/Heap)</li>
             <li>Cryptography</li>
-            <li>Programming[scripting]</li>
-            <li>Mathematics[hobby]</li>
+            <li>Mathematics[Geometry & Proofs]</li>
         </ul>
     </section>
 
@@ -66,13 +114,21 @@
             <span class="terminal-title">#connect@portfolio: ~</span>
         </div>
         <div class="terminal-body">
-            <p><span class="promt">Itsmanikandan73@internet:~$</span>whoami</p>
+            <p><span class="promt">solo_shell@runlevel3:~$</span>whoami</p>
             <p><strong>GitHub:</strong> <a href=https://github.com/Itsmanikandan73>github.com</a></p>
-            <p><strong>Status:</strong>Actively learning, building, and hunting for flags.</p>
-            <p><span class="promt">Itsmanikandan73@internet:~$</span> <span class="cursor">_</span></p>
+            <p><strong>Discord:</strong><a href="https://discord.gg/Jm9gXbxf4V">discord.com</a></p>
+            <p><strong>Status:</strong>Reading "Head First C" and solving pwn.college challenges.</p>
+            <p><span class="promt">solo_shell@runlevel3:~$</span> <span class="cursor">_</span></p>
         </div>
     </div>
 </section>
+</main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 solo_shell. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
